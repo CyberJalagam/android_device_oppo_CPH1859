@@ -81,6 +81,8 @@ TARGET_KERNEL_SOURCE := kernel/oppo/mt6771
 TARGET_KERNEL_CONFIG := oppo6771_17065_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r316199
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)/bin/aarch64-linux-gnu-
 TARGET_BOARD_SUFFIX := _64
 
 # Security patch level
